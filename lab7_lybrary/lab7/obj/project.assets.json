@@ -1,0 +1,148 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.12": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Comment/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Comment.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Comment.dll": {}
+        }
+      },
+      "lab7_lybrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Comment": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.12"
+        },
+        "compile": {
+          "bin/placeholder/lab7_lybrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lab7_lybrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.12": {
+      "sha512": "GDlY3DzUbpagqb0683NUM2RK9eJFjTfmlLJd5YtvzBf8T4dwanIOSjd2vN7dXJihyZ0JlYaCetyHgxzbrxiUOw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
+        "microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.nuspec"
+      ]
+    },
+    "Comment/1.0.0": {
+      "type": "project",
+      "path": "../Comment/Comment.csproj",
+      "msbuildProject": "../Comment/Comment.csproj"
+    },
+    "lab7_lybrary/1.0.0": {
+      "type": "project",
+      "path": "../lab7_lybrary/lab7_lybrary.csproj",
+      "msbuildProject": "../lab7_lybrary/lab7_lybrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Comment >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.Abstractions >= 7.0.12",
+      "lab7_lybrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mi\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\mi\\source\\repos\\lab7_lybrary\\lab7\\lab7.csproj",
+      "projectName": "lab7",
+      "projectPath": "C:\\Users\\mi\\source\\repos\\lab7_lybrary\\lab7\\lab7.csproj",
+      "packagesPath": "C:\\Users\\mi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mi\\source\\repos\\lab7_lybrary\\lab7\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\mi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\mi\\source\\repos\\lab7_lybrary\\Comment\\Comment.csproj": {
+              "projectPath": "C:\\Users\\mi\\source\\repos\\lab7_lybrary\\Comment\\Comment.csproj"
+            },
+            "C:\\Users\\mi\\source\\repos\\lab7_lybrary\\lab7_lybrary\\lab7_lybrary.csproj": {
+              "projectPath": "C:\\Users\\mi\\source\\repos\\lab7_lybrary\\lab7_lybrary\\lab7_lybrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": {
+            "target": "Package",
+            "version": "[7.0.12, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
